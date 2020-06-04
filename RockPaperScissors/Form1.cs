@@ -41,18 +41,18 @@ namespace RockPaperScissors
 
             
             var random = new Random();
-            //1, 4(index) or 3
+            //1, 4(index -> case 1,2,3) or random.Next(3)  -> case 0,1,2
             switch (random.Next(3))
             {
-                case 1:
+                case 0:
                     lblComputer.Text = "Rock";
                     picComputer.Image = Properties.Resources.Rock;
                     break;
-                case 2:
+                case 1:
                     lblComputer.Text = "Paper";
                     picComputer.Image = Properties.Resources.Paper;
                     break;
-                case 3:
+                case 2:
                     lblComputer.Text = "Scissors";
                     picComputer.Image = Properties.Resources.Scissors;
                     break;
