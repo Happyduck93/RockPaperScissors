@@ -33,8 +33,10 @@ namespace RockPaperScissors
         {
             i = 0;
             j = 0;
+            //start timer method
             timer.Start();
         }
+
 
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -46,6 +48,7 @@ namespace RockPaperScissors
             {
                 case 0:
                     lblComputer.Text = "Rock";
+                    //picture box
                     picComputer.Image = Properties.Resources.Rock;
                     break;
                 case 1:
@@ -80,6 +83,7 @@ namespace RockPaperScissors
 
         private void btnStop_Click(object sender, EventArgs e)
         {
+            //start timer method
             timer.Stop();
         }
 
